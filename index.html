@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deco.css">
+    <link rel="icon" href="img/logo.jpg">
+    <title>Calculadora de la Boutique</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+
+    <div class="container">
+        <!-- Contenido del formulario -->
+        <h1>Calculadora de Precio de Venta</h1>
+        <input type="text" name="nombre" id="nombre" placeholder="Verdura - Fruta:">
+        <label for="pesoBolsa">Peso de la Bolsa (en Kg):</label>
+        <input type="number" id="pesoBolsa" step="0.01" placeholder="Ingrese el peso de la bolsa">
+        <label for="precioTotal">Precio Total:</label>
+        <input type="number" id="precioTotal" step="0.01" placeholder="Ingrese el precio total de la bolsa">
+        <button onclick="calcularCostoYVenta()">Calcular Costo y Precio de Venta</button>
+        <h2>Resultado:</h2>
+
+        <div id="resultado" style="z-index: 99; text-align: left; padding-left: 10%;"></div>
+        <div id="historial"></div>
+    </div>
+    </div>
+    <script src="particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
