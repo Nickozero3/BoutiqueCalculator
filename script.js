@@ -21,7 +21,7 @@ function calcularCostoYVenta() {
     var precioVenta = costoPorKg + (costoPorKg * 0.65);
 
     // Agregar los resultados al historial
-    var resultado = "El costo por Kg es: <span style='color: red;'>$" + costoPorKg.toFixed(2) + "</span><br>El precio de venta (precio + 60%) es: <span style='color: green;'>$" + precioVenta.toFixed(2) + "</span>";
+    var resultado = "El costo por Kg es: <span style='color: red;'>$" + costoPorKg.toFixed(2) + "</span><br>El precio de venta (precio + 65%) es: <span style='color: green;'>$" + precioVenta.toFixed(2) + "</span>";
     var msj = "<span style='color: blue;'>" + Nombre.toUpperCase() + "</span> | Costo KG: <span style='color: red;'>$" + costoPorKg.toFixed(2) + "</span> | Venta KG: <span style='color: green;'>$" + precioVenta.toFixed(2) + "</span>";
     historial.push(msj);
 
