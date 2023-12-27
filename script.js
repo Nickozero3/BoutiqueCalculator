@@ -18,8 +18,7 @@ function calcularCostoYVenta() {
     var costoPorKg = precioTotal / pesoBolsa;
 
     // Calcular el precio de venta con un 60% de ganancia
-    var gananciaPorcentaje = 60;
-    var precioVenta = costoPorKg + (costoPorKg * 0.6);
+    var precioVenta = costoPorKg + (costoPorKg * 0.65);
 
     // Agregar los resultados al historial
     var resultado = "El costo por Kg es: <span style='color: red;'>$" + costoPorKg.toFixed(2) + "</span><br>El precio de venta (precio + 60%) es: <span style='color: green;'>$" + precioVenta.toFixed(2) + "</span>";
